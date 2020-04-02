@@ -42,7 +42,7 @@ app.use((err, req, res, next) => {
 
 const init = async () => {
   try {
-    await db.sync();
+    // await db.sync();
     app.listen(PORT, () =>
       console.log(`listening on port http://localhost:${PORT}`)
     );
